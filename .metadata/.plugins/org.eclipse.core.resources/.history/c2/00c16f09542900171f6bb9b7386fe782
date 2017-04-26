@@ -1,0 +1,72 @@
+package com.bjsxt.oop.object;
+
+
+
+///**
+// * String类
+// * 
+// * 引用数据类型
+// * final类  不能有子类 
+// *  不可变字符序列
+//	 * 1.str.length()
+//	 * 2.str.toUpperCase()
+//	 * 3. str.toLowerCase()
+//	 * 4.str.indexOf("学")
+//	 * 5.str.charAt(5)
+//	 * 6.str.substring(5)
+//	 * 7.str.substring(5, 7)
+//	 * 8.str2.trim();
+// * 
+// * @author liukaili
+// *
+// */
+//public class TestString {
+//
+//	public static void main(String[] args) {
+//		String str ="北京尚学堂bjsxt";
+//
+//		//1.字符串长度和大小写
+//		System.out.println("str.length="+str.length());//10 Java字符串就是Unicode字符序列
+//		str = str.toUpperCase();//不可变字符序列
+//		System.out.println("大写："+str);
+//		str = str.toLowerCase();
+//		System.out.println("小写："+str);
+//		
+//		//2.获取字符或者子串的位置（索引）
+//		int index = str.indexOf("学");
+//		System.out.println(index);//3
+//		int index2 = str.indexOf("尚学堂");
+//		System.out.println(index2);//2
+//		int index3 = str.indexOf("西三旗");
+//		System.out.println(index3);//如果不存在，index=-1		
+//		
+//		//3.从字符串中截取字符或者子串
+//		char ch =str.charAt(5);
+//		System.out.println(ch);
+//		String substr = str.substring(5);
+//		System.out.println(substr);
+//		String substr2 = str.substring(5, 7);// 5 ----7-1
+//		System.out.println(substr2);
+//		
+//		//4.去除两端空格
+//		String  str2 = "   北京尚学堂     bjsxt   ";
+//		System.out.println(str2.length());
+//		str2 = str2.trim();
+//		System.out.println(str2.length());	
+//		System.out.println(str2);
+//	}
+//}
+public class StringToDouble {
+
+    public static void main(String[] args) {
+        String s = "shangxue";
+        System.out.println(s);
+        System.out.println(s.toString());
+        System.out.println("---------------------");      
+        String a = "a  b  c";
+//      双引号可以，单引号不可以；
+        System.out.println(a.replace("  ", ""));
+        
+    }
+
+}

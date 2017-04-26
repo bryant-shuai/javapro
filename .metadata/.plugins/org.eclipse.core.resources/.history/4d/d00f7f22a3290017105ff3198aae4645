@@ -1,0 +1,29 @@
+package com.sxt.calendar;
+
+import java.util.Scanner;
+
+// 非递归实现斐波那契数列
+public class FeiBo {
+	public static void main(String[] args) {
+
+	}
+	
+	public static int feibo(int n) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("请输入斐波那契的位置");
+		int num = input.nextInt();
+        if (1 == num || 2 == num) {  
+            return 1;  
+        }  
+        int num1 = 1;  
+        int num2 = 1;  
+        int temp = 0;  
+        for (int i = 2; i < num; i++) {  
+            temp = num2;  
+            num2 += num1;  
+            num1 = temp;  
+        }  
+        return num2; 
+		
+	} 
+}

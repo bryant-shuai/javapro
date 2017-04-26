@@ -1,0 +1,19 @@
+package snippet;
+
+public class Snippet {
+	/javaoop1/src
+	com.bjsxt.oop
+	com.bjsxt.oop.composite
+	com.bjsxt.oop.encapsulation
+	com.bjsxt.oop.encapsulation2
+	com.bjsxt.oop.encapsulation3
+	com.bjsxt.oop.inheritance
+	com.bjsxt.oop.inheritance2
+	com.bjsxt.oop.inheritance3
+	com.bjsxt.oop.inheritance4
+	com.bjsxt.oop.inheritance5
+	com.bjsxt.oop.object
+	com.bjsxt.oop.object2
+	com.bjsxt.oop.polymorphism
+}
+

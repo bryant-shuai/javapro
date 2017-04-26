@@ -1,0 +1,13 @@
+package com.sxt.calendar;
+
+import java.util.Date;
+
+
+
+// 非递归实现斐波那契数列
+public class Test {
+	public static void main(String[] args) {
+		Date d = new Date();
+		System.out.println(d);
+	}	
+}

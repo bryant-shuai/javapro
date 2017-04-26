@@ -1,0 +1,39 @@
+package com.bjsxt.oop.polymorphism;
+/**
+ * 缺点1：showEat()太多了，针对每一个国家的人都要有一个showEat()
+ * 缺点2：每增加一个子类，都要再增加一个吃饭的方法showEat().,不符合开闭原则
+ * 
+ * 解决方案：多态： 使用父类做形参
+ * 
+ * 优点1：大大减少了代码数量
+ * 优点2：符合开闭原则，利于修改和维护
+ * 
+ * @author Administrator
+ *
+ */
+public class Canteen {
+
+	public static void main(String[] args) {
+		//中国人来了并吃饭
+		Chinese  ch = new Chinese();
+//		Person p = ch;
+		showEat(ch);//
+		//英国人来了并吃饭
+		English en = new English();
+		showEat(en);
+		//person来了并吃饭
+		Person person = new Person();
+		showEat(person);
+		//意大利人来了并吃饭
+		Italian it = new Italian();
+		showEat(it);
+		
+		Person person2 = new English();
+		showEat(person2);
+		
+	}
+	
+	public static void showEat(Person person){
+		person.eat();//调用的是子类的方法，而不是父类的
+	}
+}

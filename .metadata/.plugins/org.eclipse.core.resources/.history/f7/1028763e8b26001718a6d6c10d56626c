@@ -1,0 +1,76 @@
+package com.bjsxt.oop.object;
+
+
+/**
+ * 技能：认识类和对象
+ * 功能：小红，老张两个人吃饭，自我介绍，休息
+ * 
+ * 4.如何创建对象
+ * Person xh = new Person();
+ * Scanner  input  = new Scanner(System.in)
+ * 
+ * 5.如何操作属性
+ * 	   xh.name="小红";
+		xh.age=18;
+		xh.sex="女";
+ * 对象名.属性
+ * 
+ * 
+ * 6.如何调用方法
+ * xh.eat();
+	String info =xh.introduce();
+    xh.sleep("宿舍");
+ * 对象名.方法名
+ * 
+ * 7.创建对象时内存分配图
+ * 
+ *   基本数据类型的内存分配只在栈内存中分配空间
+ *   引用数据类型的内存分配在栈内存和堆内存红分配空间
+ *   栈内存：对象的引用变量xh  lz
+ *   堆内存：对象的具体内容
+ * 
+ * @author Administrator
+ *
+ */
+public class TestPerson {
+
+	public static void main(String[] args) {
+		
+		int  n = 5;
+		//int n;
+		//n=5;
+		
+		//小红吃饭，自我介绍，休息
+		//1.创建对象：
+		//Scanner  input  = new Scanner(System.in);//ctrl+shift+o
+		//input.nextInt();
+		//Person xh = new Person();
+		Person xh;
+		xh = new Person();
+		System.out.print(xh.name);
+		//2.属性赋值
+//		xh.name="小红";
+		xh.age=18;
+		xh.sex="女";
+		//3.调用方法
+		xh.eat();
+		String info =xh.introduce();
+		System.out.println(info);
+		xh.sleep("宿舍");
+		
+		System.out.println("==================");
+		
+		//老张吃饭，自我介绍，休息
+		//1.创建对象
+		Person  lz= new Person();
+		//2.属性赋值
+		lz.name="老张";
+		lz.age=54;
+		lz.sex="男";
+		//3.调用方法
+		lz.eat();
+		String  info2 = lz.introduce();
+		System.out.println(info2);
+		lz.sleep("旅馆");
+	}
+}

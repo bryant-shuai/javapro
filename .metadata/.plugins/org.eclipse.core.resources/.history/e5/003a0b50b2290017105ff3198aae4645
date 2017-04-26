@@ -1,0 +1,15 @@
+package com.sxt.calendar;
+
+import java.util.Date;
+
+
+// 
+public class SimpleDateFormat {
+	public static void main(String[] args) {
+		// 创建时间对象
+		Date date = new Date();
+		//打印当前时间 yyyy-MM-dd hh:mm:ss
+		System.out.println(date.toLocaleString());
+		
+	}	
+}

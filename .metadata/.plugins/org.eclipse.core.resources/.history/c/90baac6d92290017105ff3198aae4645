@@ -1,0 +1,15 @@
+package com.sxt.calendar;
+
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+// 创建自动输入的日历
+public class CalendarDemo {
+	public static void main(String[] args) {
+		//创建日历头部信息
+		System.out.println("日\t一\t二\t三\t四\t五\t六\t");
+		//创建Calendar对象
+		Calendar cal = new GregorianCalendar();
+		
+		
+	}
+}

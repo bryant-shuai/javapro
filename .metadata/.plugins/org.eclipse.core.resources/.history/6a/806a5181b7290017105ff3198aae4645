@@ -1,0 +1,21 @@
+package com.sxt.calendar;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+
+
+// 
+public class TestCalendartDemo {
+	public static void main(String[] args) {
+		// 获取日历对象
+		Calendar cal = Calendar.getInstance();
+		String str = "1990-03-03";
+		DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+		Date date = null ;
+		
+		
+	} 
+}	
+
